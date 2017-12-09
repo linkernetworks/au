@@ -6,8 +6,8 @@ import (
 	"log"
 	"strconv"
 
-	"bitbucket.org/linkernetworks/aurora/server"
 	"bitbucket.org/linkernetworks/aurora/src/cmd/au/util/httpclient"
+	"bitbucket.org/linkernetworks/aurora/src/entity"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -45,7 +45,7 @@ func (w *WorkspaceResourceCollection) Create(wsType string, numItemPreview int, 
 	}
 
 	printResult(ret)
-	wsResult := server.Batch{}
+	wsResult := entity.Batch{}
 	var ws *WorkspaceResource
 	if err := json.Unmarshal(ret, &wsResult); err != nil {
 		log.Println("error during unmarshal, err:", err)
