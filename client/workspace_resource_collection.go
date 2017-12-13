@@ -45,7 +45,7 @@ func (w *WorkspaceResourceCollection) Create(wsType string, numItemPreview int, 
 	}
 
 	printResult(ret)
-	wsResult := entity.Batch{}
+	wsResult := entity.Workspace{}
 	var ws *WorkspaceResource
 	if err := json.Unmarshal(ret, &wsResult); err != nil {
 		log.Println("error during unmarshal, err:", err)
