@@ -2,9 +2,9 @@ package main
 
 import "bitbucket.org/linkernetworks/aurora/src/cmd/au/cmd"
 
-var version string
+var buildNumber string
 
 func main() {
-	cmd.SetBuildNumber(version)
+	cmd.SetBuildNumber(buildNumber)
 	cmd.Execute()
 }
