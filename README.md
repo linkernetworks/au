@@ -22,6 +22,8 @@ go install bitbucket.org/linkernetworks/cv-tracker/src/sdk/cmd/au
 - Upload file to workspace: `au upload WORKSPACE_ID FILE_PATH1, FILE_PATH2 ....`
     - `FILE_PATH` could be file or path.
 
+- Get application version number: `au version`
+
 #### Other options:
 
 - Enablbe SSL connection (default is disable) 
