@@ -8,5 +8,6 @@ import (
 func main() {
 	cmd.SetBuildRevision(aurora.BuildRevision)
 	cmd.SetBuildNumber(aurora.BuildNumber)
+	cmd.SetBuildDate(aurora.BuildDate)
 	cmd.Execute()
 }
