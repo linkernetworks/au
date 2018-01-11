@@ -1,10 +1,12 @@
 package main
 
-import "bitbucket.org/linkernetworks/aurora/src/cmd/au/cmd"
-
-var revision string
+import (
+	"bitbucket.org/linkernetworks/aurora/src/aurora"
+	"bitbucket.org/linkernetworks/aurora/src/cmd/au/cmd"
+)
 
 func main() {
-	cmd.SetRevision(revision)
+	cmd.SetBuildRevision(aurora.BuildRevision)
+	cmd.SetBuildNumber(aurora.BuildNumber)
 	cmd.Execute()
 }
