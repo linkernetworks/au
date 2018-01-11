@@ -12,14 +12,14 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of au",
 	Long:  `All software has versions. This version from git tags`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("au version:%s build number:%s \n", versionNumber, buildNumber)
+		fmt.Printf("au version:%s build number:%s \n", versionNumber, revision)
 	},
 }
-var buildNumber string
+var revision string
 var versionNumber string = "1.0"
 
-func SetBuildNumber(v string) {
-	buildNumber = v
+func SetRevision(v string) {
+	revision = v
 }
 func init() {
 	rootCmd.AddCommand(versionCmd)
