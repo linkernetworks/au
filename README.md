@@ -5,7 +5,7 @@ Note: For localhost support only.
 ## Install Aurora commands:
 
 ```
-go install bitbucket.org/linkernetworks/cv-tracker/src/sdk/cmd/au
+go install bitbucket.org/linkernetworks/aurora/src/sdk/cmd/au
 ```
 
 (you need have bitbucket permission)
