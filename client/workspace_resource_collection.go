@@ -6,8 +6,8 @@ import (
 	"log"
 	"strconv"
 
-	"bitbucket.org/linkernetworks/aurora/src/cmd/au/util/httpclient"
-	"bitbucket.org/linkernetworks/aurora/src/entity"
+	"github.com/linkernetworks/aurora/src/cmd/au/util/httpclient"
+	"github.com/linkernetworks/aurora/src/entity"
 	"gopkg.in/mgo.v2/bson"
 )
 

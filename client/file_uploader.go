@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"bitbucket.org/linkernetworks/aurora/src/cmd/au/util/httpclient"
+	"github.com/linkernetworks/aurora/src/cmd/au/util/httpclient"
 	pb "gopkg.in/cheggaaa/pb.v1"
 )
 

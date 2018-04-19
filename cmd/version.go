@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"bitbucket.org/linkernetworks/aurora/src/aurora"
+	"github.com/linkernetworks/aurora/src/aurora"
 	"github.com/spf13/cobra"
 )
 
