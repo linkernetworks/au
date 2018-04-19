@@ -1,3 +1,9 @@
+au: Linker Networks Aurora client tools
+==============
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/linkernetworks/au/master/LICENSE)  [![GoDoc](https://godoc.org/github.com/linkernetworks/au?status.svg)](https://godoc.org/github.com/linkernetworks/au)  [![Build Status](https://travis-ci.org/linkernetworks/au.svg?branch=master)](https://travis-ci.org/kkdai/consistent)
+
+
 # AURORA Console tool
 
 Note: For localhost support only.
