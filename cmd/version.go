@@ -2,10 +2,13 @@ package cmd
 
 import (
 	"fmt"
+	"time"
 
-	"github.com/linkernetworks/aurora/src/aurora"
 	"github.com/spf13/cobra"
 )
+
+var BuildNumber string = "1.0"
+var BuildRevision string = ""
 
 // versionCmd represents the version command
 var versionCmd = &cobra.Command{
@@ -13,7 +16,7 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of au",
 	Long:  `All software has versions. This version from git tags`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("au build number:%s  revision:%s version:%s build time:%s \n", aurora.BuildNumber, aurora.BuildRevision, versionNumber, aurora.BuildDate)
+		fmt.Printf("au build number:%s  revision:%s version:%s build time:%s \n", BuildNumber, BuildRevision, versionNumber, time.Now().String())
 	},
 }
 

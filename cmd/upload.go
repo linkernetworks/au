@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/linkernetworks/aurora/src/cmd/au/client"
+	"github.com/linkernetworks/au/client"
 	"github.com/spf13/cobra"
 )
 

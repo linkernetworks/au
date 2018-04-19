@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/linkernetworks/aurora/src/cmd/au/cmd"
+	"github.com/linkernetworks/au/cmd"
 )
 
 func main() {

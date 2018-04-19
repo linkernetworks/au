@@ -6,8 +6,7 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/linkernetworks/aurora/src/cmd/au/util/httpclient"
-	"github.com/linkernetworks/aurora/src/entity"
+	"github.com/linkernetworks/au/util/httpclient"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -45,14 +44,14 @@ func (w *WorkspaceResourceCollection) Create(wsType string, numItemPreview int, 
 	}
 
 	printResult(ret)
-	wsResult := entity.Workspace{}
+	var wsResult map[string]interface{}
 	var ws *WorkspaceResource
 	if err := json.Unmarshal(ret, &wsResult); err != nil {
 		log.Println("error during unmarshal, err:", err)
 	}
 	ws = &WorkspaceResource{
 		hasSSL: w.hasSSL,
-		WsID:   wsResult.ID.Hex(),
+		WsID:   wsResult["id"].(bson.ObjectId).Hex(),
 	}
 	return ws, nil
 }
